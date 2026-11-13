@@ -1,0 +1,69 @@
+# FedMedVision — 6-Node Medical Consortium Configuration
+pathologies:
+  - "Cardiomegaly"
+  - "Effusion"
+  - "Infiltration"
+  - "Pneumonia"
+  - "No Finding"
+
+image_size: 224
+dirichlet_alpha: 0.3
+seeds: [42, 123, 2026]
+
+nodes:
+  node_0:
+    name: "Metropolitan General Hospital"
+    role: "labeled_hub"
+    dataset: "nih_cxr14"
+    sample_count: 8000
+    simulated_latency_ms: 50
+    dirichlet_alpha: 0.3
+
+  node_1:
+    name: "University Medical Center"
+    role: "labeled_hub"
+    dataset: "nih_cxr14"
+    sample_count: 8000
+    simulated_latency_ms: 60
+    dirichlet_alpha: 0.3
+
+  node_2:
+    name: "Riverside Regional Clinic"
+    role: "unlabeled_clinic"
+    dataset: "chexpert"
+    sample_count: 10000
+    simulated_latency_ms: 120
+    pseudo_labeling: "mc_dropout"
+
+  node_3:
+    name: "Northside Community Hospital"
+    role: "unlabeled_clinic"
+    dataset: "chexpert"
+    sample_count: 10000
+    simulated_latency_ms: 150
+    pseudo_labeling: "mc_dropout"
+
+  node_4:
+    name: "Valley Rural Health Center"
+    role: "unlabeled_clinic"
+    dataset: "chexpert"
+    sample_count: 10000
+    simulated_latency_ms: 200
+    pseudo_labeling: "mc_dropout"
+
+  node_5:
+    name: "Highland Rural Clinic (Byzantine)"
+    role: "unlabeled_clinic"
+    dataset: "chexpert"
+    sample_count: 10000
+    simulated_latency_ms: 220
+    pseudo_labeling: "mc_dropout"
+    byzantine_poisoning: true  # toggleable via security_green.yaml
+
+external_test:
+  vindr_cxr:
+    purpose: "held_out_generalization"
+    sample_count: 3000
+  nih_bbox_eval:
+    purpose: "xai_iou_evaluation"
+    bbox_file: "data/raw/BBox_List_2017.csv"

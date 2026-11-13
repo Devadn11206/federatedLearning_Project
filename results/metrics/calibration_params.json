@@ -1,0 +1,6 @@
+{
+  "optimal_temperature": 1.6297,
+  "raw_ece": 0.6321,
+  "calibrated_ece": 0.6347,
+  "round": 6
+}

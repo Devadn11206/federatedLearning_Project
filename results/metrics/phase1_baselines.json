@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-11-13 12:41:41",
+  "hardware": {
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "vram_gb": 4.0
+  },
+  "pathologies": [
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Pneumonia",
+    "No Finding"
+  ],
+  "baselines": {
+    "isolated_hub_0": {
+      "exp_name": "isolated_hub_0",
+      "epochs": 1,
+      "train_time_sec": 2.44,
+      "train_samples": 20,
+      "validation_metrics": {
+        "per_class_auroc": {
+          "Cardiomegaly": 0.4286,
+          "Effusion": 0.5,
+          "Infiltration": 0.5,
+          "Pneumonia": 0.463,
+          "No Finding": 0.5833
+        },
+        "per_class_auprc": {
+          "Cardiomegaly": 0.1111,
+          "Effusion": 0.6151,
+          "Infiltration": 0.3214,
+          "Pneumonia": 0.7169,
+          "No Finding": 0.2778
+        },
+        "macro_auroc": 0.495,
+        "macro_auprc": 0.4084,
+        "macro_f1": 0.5297,
+        "ece": 0.4359
+      },
+      "external_test_metrics": {
+        "per_class_auroc": {
+          "Cardiomegaly": 0.5833,
+          "Effusion": 0.3333,
+          "Infiltration": 0.5,
+          "Pneumonia": 0.3125,
+          "No Finding": 0.2381
+        },
+        "per_class_auprc": {
+          "Cardiomegaly": 0.6,
+          "Effusion": 0.2889,
+          "Infiltration": 0.0,
+          "Pneumonia": 0.225,
+          "No Finding": 0.2611
+        },
+        "macro_auroc": 0.3935,
+        "macro_auprc": 0.275,
+        "macro_f1": 0.4,
+        "ece": 0.2339
+      },
+      "checkpoint_path": "C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"
+    },
+    "centralized_oracle": {
+      "exp_name": "centralized_oracle",
+      "epochs": 1,
+      "train_time_sec": 0.92,
+      "train_samples": 40,
+      "validation_metrics": {
+        "per_class_auroc": {
+          "Cardiomegaly": 0.8571,
+          "Effusion": 0.4464,
+          "Infiltration": 0.2308,
+          "Pneumonia": 0.7037,
+          "No Finding": 0.7778
+        },
+        "per_class_auprc": {
+          "Cardiomegaly": 0.3333,
+          "Effusion": 0.5643,
+          "Infiltration": 0.1269,
+          "Pneumonia": 0.8028,
+          "No Finding": 0.5873
+        },
+        "macro_auroc": 0.6032,
+        "macro_auprc": 0.4829,
+        "macro_f1": 0.5839,
+        "ece": 0.3129
+      },
+      "external_test_metrics": {
+        "per_class_auroc": {
+          "Cardiomegaly": 0.7083,
+          "Effusion": 0.5238,
+          "Infiltration": 0.5,
+          "Pneumonia": 0.375,
+          "No Finding": 0.9524
+        },
+        "per_class_auprc": {
+          "Cardiomegaly": 0.6845,
+          "Effusion": 0.3595,
+          "Infiltration": 0.0,
+          "Pneumonia": 0.2361,
+          "No Finding": 0.9167
+        },
+        "macro_auroc": 0.6119,
+        "macro_auprc": 0.4394,
+        "macro_f1": 0.5096,
+        "ece": 0.2019
+      },
+      "checkpoint_path": "C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"
+    }
+  }
+}

@@ -1,0 +1,695 @@
+{"timestamp": "2026-11-12T03:55:25.201466+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_start", "fed_event": "data_preparation_start", "fed_mode": "synthetic", "fed_dryrun": true}
+{"timestamp": "2026-11-12T03:55:25.205603+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T03:55:27.100884+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (100 samples)"}
+{"timestamp": "2026-11-12T03:55:28.797923+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (100 samples)"}
+{"timestamp": "2026-11-12T03:55:30.158819+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (80 samples)"}
+{"timestamp": "2026-11-12T03:55:31.642962+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (80 samples)"}
+{"timestamp": "2026-11-12T03:55:33.038940+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (80 samples)"}
+{"timestamp": "2026-11-12T03:55:34.313910+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (80 samples)"}
+{"timestamp": "2026-11-12T03:55:35.410702+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (60 samples)"}
+{"timestamp": "2026-11-12T03:55:36.270593+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (50 samples)"}
+{"timestamp": "2026-11-12T03:55:36.762390+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (30 samples)"}
+{"timestamp": "2026-11-12T03:55:36.766113+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T03:55:36.768345+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_complete", "fed_event": "data_preparation_complete"}
+{"timestamp": "2026-11-12T03:56:01.109499+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_device": "CPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T03:56:01.112915+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T03:56:54.759454+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.8236"}
+{"timestamp": "2026-11-12T03:56:54.984348+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T03:57:13.272862+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T03:58:52.395614+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.2866"}
+{"timestamp": "2026-11-12T03:58:52.529073+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T03:59:10.036139+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T03:59:55.467462+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T03:59:55.685043+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T03:59:55.862098+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T03:59:56.002939+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T03:59:56.156349+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T03:59:56.296790+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T03:59:56.448738+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T03:59:56.593797+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T03:59:56.686146+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T03:59:56.766517+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T03:59:56.769011+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T03:59:59.099577+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_device": "CPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T03:59:59.102439+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T04:00:05.037064+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5238"}
+{"timestamp": "2026-11-12T04:00:05.205274+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T04:00:07.414810+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T04:00:17.257496+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.2465"}
+{"timestamp": "2026-11-12T04:00:17.387154+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T04:00:19.044485+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T04:00:38.862526+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T04:00:39.102236+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T04:00:39.282867+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T04:00:39.423272+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:00:39.564242+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:00:39.686912+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:00:39.847824+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:00:39.973051+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:00:40.062108+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T04:00:40.131163+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T04:00:40.133490+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T04:00:42.108739+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_device": "CPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T04:00:42.110478+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T04:00:47.288848+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5326"}
+{"timestamp": "2026-11-12T04:00:47.427329+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T04:00:49.391913+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T04:00:58.412520+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.2558"}
+{"timestamp": "2026-11-12T04:00:58.542328+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T04:01:00.308099+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T04:05:38.993289+00:00", "level": "INFO", "logger": "fedmedvision.download", "message": "[SYSTEM] dataset_download_start", "fed_event": "dataset_download_start", "fed_dataset": "all", "fed_resize": 224}
+{"timestamp": "2026-11-12T04:05:38.995127+00:00", "level": "INFO", "logger": "fedmedvision.download", "message": "=== Processing NIH ChestX-ray14 ==="}
+{"timestamp": "2026-11-12T04:05:50.218484+00:00", "level": "INFO", "logger": "fedmedvision.download", "message": "[SYSTEM] dataset_download_start", "fed_event": "dataset_download_start", "fed_dataset": "all", "fed_resize": 224}
+{"timestamp": "2026-11-12T04:05:50.220196+00:00", "level": "INFO", "logger": "fedmedvision.download", "message": "=== Processing NIH ChestX-ray14 ==="}
+{"timestamp": "2026-11-12T04:06:27.327190+00:00", "level": "INFO", "logger": "fedmedvision.download", "message": "[SYSTEM] dataset_download_start", "fed_event": "dataset_download_start", "fed_dataset": "all", "fed_resize": 224}
+{"timestamp": "2026-11-12T04:06:27.328972+00:00", "level": "INFO", "logger": "fedmedvision.download", "message": "=== Processing NIH ChestX-ray14 ==="}
+{"timestamp": "2026-11-12T04:15:34.039950+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_start", "fed_event": "data_preparation_start", "fed_mode": "real", "fed_dryrun": false}
+{"timestamp": "2026-11-12T04:15:34.042961+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T04:15:34.163392+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 25 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T04:15:34.166673+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 25 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T04:15:34.197292+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (7 entries)."}
+{"timestamp": "2026-11-12T04:15:34.199524+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T04:15:35.330920+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records."}
+{"timestamp": "2026-11-12T04:15:35.336311+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (5 entries)."}
+{"timestamp": "2026-11-12T04:15:35.347287+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20) and hub_1.csv (0) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T04:15:35.486901+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (2215 samples)."}
+{"timestamp": "2026-11-12T04:15:35.495185+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (1812 samples)."}
+{"timestamp": "2026-11-12T04:15:35.512593+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (4548 samples)."}
+{"timestamp": "2026-11-12T04:15:35.519754+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (1425 samples)."}
+{"timestamp": "2026-11-12T04:15:35.524115+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (15 samples)."}
+{"timestamp": "2026-11-12T04:15:35.527453+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T04:15:35.543135+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_complete", "fed_event": "data_preparation_complete"}
+{"timestamp": "2026-11-12T04:16:15.620159+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_start", "fed_event": "data_preparation_start", "fed_mode": "real", "fed_dryrun": false}
+{"timestamp": "2026-11-12T04:16:15.621828+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T04:16:15.718115+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 25 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T04:16:15.721579+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 25 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T04:16:15.748513+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (7 entries)."}
+{"timestamp": "2026-11-12T04:16:15.749037+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T04:16:16.959517+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records."}
+{"timestamp": "2026-11-12T04:16:16.966838+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (3 entries)."}
+{"timestamp": "2026-11-12T04:16:16.981683+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (16) and hub_1.csv (6) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T04:16:17.102956+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (2215 samples)."}
+{"timestamp": "2026-11-12T04:16:17.115539+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (1812 samples)."}
+{"timestamp": "2026-11-12T04:16:17.132667+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (4548 samples)."}
+{"timestamp": "2026-11-12T04:16:17.140920+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (1425 samples)."}
+{"timestamp": "2026-11-12T04:16:17.145940+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (15 samples)."}
+{"timestamp": "2026-11-12T04:16:17.149799+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T04:16:17.166558+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_complete", "fed_event": "data_preparation_complete"}
+{"timestamp": "2026-11-12T04:17:08.220196+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "real", "fed_device": "CPU", "fed_epochs": 5}
+{"timestamp": "2026-11-12T04:17:08.221795+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T04:17:13.228713+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/05 - Loss: 1.0985"}
+{"timestamp": "2026-11-12T04:17:17.776879+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 02/05 - Loss: 1.1663"}
+{"timestamp": "2026-11-12T04:17:21.540135+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 03/05 - Loss: 1.1903"}
+{"timestamp": "2026-11-12T04:17:25.479102+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 04/05 - Loss: 0.9750"}
+{"timestamp": "2026-11-12T04:17:29.033333+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 05/05 - Loss: 0.9906"}
+{"timestamp": "2026-11-12T04:17:29.188879+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T04:17:30.792122+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T04:17:36.880086+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/05 - Loss: 1.3247"}
+{"timestamp": "2026-11-12T04:17:42.599384+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 02/05 - Loss: 1.4640"}
+{"timestamp": "2026-11-12T04:17:47.821885+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 03/05 - Loss: 1.1105"}
+{"timestamp": "2026-11-12T04:17:52.741858+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 04/05 - Loss: 1.2194"}
+{"timestamp": "2026-11-12T04:17:57.422533+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 05/05 - Loss: 1.1858"}
+{"timestamp": "2026-11-12T04:17:57.545495+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T04:17:58.795206+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T04:18:46.300672+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T04:18:46.490735+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T04:18:46.670245+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T04:18:46.818000+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:18:46.961192+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:18:47.101597+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:18:47.236580+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:18:47.390222+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:18:47.495429+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T04:18:47.573346+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T04:18:47.575767+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T04:18:49.872175+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "CPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T04:18:49.873910+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T04:18:54.890435+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5217"}
+{"timestamp": "2026-11-12T04:18:55.019012+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T04:18:57.011499+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T04:19:06.367496+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.2500"}
+{"timestamp": "2026-11-12T04:19:06.497893+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T04:19:08.186021+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T04:19:08.220366+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T04:19:08.330841+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 25 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T04:19:08.335212+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 25 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T04:19:08.371238+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (7 entries)."}
+{"timestamp": "2026-11-12T04:19:08.373162+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T04:19:09.440067+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records."}
+{"timestamp": "2026-11-12T04:19:09.446693+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (3 entries)."}
+{"timestamp": "2026-11-12T04:19:09.457814+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (16) and hub_1.csv (6) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T04:19:09.553173+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (2215 samples)."}
+{"timestamp": "2026-11-12T04:19:09.560580+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (1812 samples)."}
+{"timestamp": "2026-11-12T04:19:09.574479+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (4548 samples)."}
+{"timestamp": "2026-11-12T04:19:09.579592+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (1425 samples)."}
+{"timestamp": "2026-11-12T04:19:09.583535+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (15 samples)."}
+{"timestamp": "2026-11-12T04:19:09.585828+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T04:19:33.988847+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T04:19:34.189597+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T04:19:34.369499+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T04:19:34.495057+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:19:34.626695+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:19:34.749713+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:19:34.886091+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:19:35.022754+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T04:19:35.109946+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T04:19:35.175544+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T04:19:35.177356+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T04:19:37.107981+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "CPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T04:19:37.109494+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T04:19:42.364738+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5291"}
+{"timestamp": "2026-11-12T04:19:42.505802+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T04:19:44.550026+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T04:19:53.467534+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.2513"}
+{"timestamp": "2026-11-12T04:19:53.635145+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T04:19:55.338432+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T04:19:55.373970+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T04:19:55.467777+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 25 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T04:19:55.471264+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 25 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T04:19:55.502477+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (7 entries)."}
+{"timestamp": "2026-11-12T04:19:55.503601+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T04:19:56.557891+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records."}
+{"timestamp": "2026-11-12T04:19:56.562593+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (3 entries)."}
+{"timestamp": "2026-11-12T04:19:56.574565+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (16) and hub_1.csv (6) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T04:19:56.693923+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (2215 samples)."}
+{"timestamp": "2026-11-12T04:19:56.700767+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (1812 samples)."}
+{"timestamp": "2026-11-12T04:19:56.714405+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (4548 samples)."}
+{"timestamp": "2026-11-12T04:19:56.722687+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (1425 samples)."}
+{"timestamp": "2026-11-12T04:19:56.726700+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (15 samples)."}
+{"timestamp": "2026-11-12T04:19:56.729236+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T06:20:17.761673+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_start", "fed_event": "data_preparation_start", "fed_mode": "real", "fed_dryrun": false}
+{"timestamp": "2026-11-12T06:20:17.764049+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T06:20:17.943695+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T06:20:18.491171+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T06:20:18.629777+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-12T06:20:18.631519+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T06:20:19.613927+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-12T06:20:19.629049+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-12T06:20:19.829361+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T06:20:19.861018+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-12T06:20:20.041948+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-12T06:20:20.053134+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-12T06:20:20.069595+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-12T06:20:20.085795+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-12T06:20:20.114473+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-12T06:20:20.121967+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T06:20:20.152325+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "[SYSTEM] data_preparation_complete", "fed_event": "data_preparation_complete"}
+{"timestamp": "2026-11-12T06:23:25.626561+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "real", "fed_device": "CPU", "fed_epochs": 5}
+{"timestamp": "2026-11-12T06:23:25.628340+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T06:27:33.466474+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/05 - Loss: 1.0707"}
+{"timestamp": "2026-11-12T06:31:28.585237+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 02/05 - Loss: 1.0085"}
+{"timestamp": "2026-11-12T06:35:33.774629+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 03/05 - Loss: 0.9686"}
+{"timestamp": "2026-11-12T06:39:36.617503+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 04/05 - Loss: 0.9543"}
+{"timestamp": "2026-11-12T06:43:34.067382+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 05/05 - Loss: 0.9549"}
+{"timestamp": "2026-11-12T06:43:34.270286+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T06:47:17.085152+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T06:56:14.996446+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "real", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 20}
+{"timestamp": "2026-11-12T06:56:14.999427+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T06:56:32.706417+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/20 - Loss: 1.0854"}
+{"timestamp": "2026-11-12T06:56:46.761981+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 02/20 - Loss: 0.9955"}
+{"timestamp": "2026-11-12T06:57:04.495809+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 03/20 - Loss: 0.9566"}
+{"timestamp": "2026-11-12T06:57:23.336571+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 04/20 - Loss: 0.9510"}
+{"timestamp": "2026-11-12T06:57:37.430264+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 05/20 - Loss: 0.9546"}
+{"timestamp": "2026-11-12T06:57:51.932498+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 06/20 - Loss: 0.9459"}
+{"timestamp": "2026-11-12T06:58:06.453952+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 07/20 - Loss: 0.9408"}
+{"timestamp": "2026-11-12T06:58:22.846571+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 08/20 - Loss: 0.9350"}
+{"timestamp": "2026-11-12T06:58:42.768115+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 09/20 - Loss: 0.9227"}
+{"timestamp": "2026-11-12T06:58:57.045587+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 10/20 - Loss: 0.9146"}
+{"timestamp": "2026-11-12T06:59:11.679248+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 11/20 - Loss: 0.8970"}
+{"timestamp": "2026-11-12T06:59:26.132166+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 12/20 - Loss: 0.9101"}
+{"timestamp": "2026-11-12T06:59:40.735148+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 13/20 - Loss: 0.9066"}
+{"timestamp": "2026-11-12T06:59:55.254531+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 14/20 - Loss: 0.8984"}
+{"timestamp": "2026-11-12T07:00:09.670941+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 15/20 - Loss: 0.8916"}
+{"timestamp": "2026-11-12T07:00:24.245288+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 16/20 - Loss: 0.8930"}
+{"timestamp": "2026-11-12T07:00:38.572712+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 17/20 - Loss: 0.8805"}
+{"timestamp": "2026-11-12T07:00:52.949521+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 18/20 - Loss: 0.8783"}
+{"timestamp": "2026-11-12T07:01:09.716257+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 19/20 - Loss: 0.8862"}
+{"timestamp": "2026-11-12T07:01:23.944563+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 20/20 - Loss: 0.8804"}
+{"timestamp": "2026-11-12T07:01:24.143793+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T07:01:49.275848+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T07:05:24.920089+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/20 - Loss: 0.8885"}
+{"timestamp": "2026-11-12T07:06:58.497332+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 02/20 - Loss: 0.8455"}
+{"timestamp": "2026-11-12T07:08:32.652515+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 03/20 - Loss: 0.8285"}
+{"timestamp": "2026-11-12T07:10:06.616620+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 04/20 - Loss: 0.8144"}
+{"timestamp": "2026-11-12T07:11:40.611474+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 05/20 - Loss: 0.8115"}
+{"timestamp": "2026-11-12T07:13:12.294510+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 06/20 - Loss: 0.8048"}
+{"timestamp": "2026-11-12T07:14:44.178658+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 07/20 - Loss: 0.8042"}
+{"timestamp": "2026-11-12T07:16:16.588862+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 08/20 - Loss: 0.7970"}
+{"timestamp": "2026-11-12T07:17:49.790221+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 09/20 - Loss: 0.7985"}
+{"timestamp": "2026-11-12T07:19:21.573611+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 10/20 - Loss: 0.7967"}
+{"timestamp": "2026-11-12T07:20:53.025219+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 11/20 - Loss: 0.7886"}
+{"timestamp": "2026-11-12T07:22:26.366375+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 12/20 - Loss: 0.7895"}
+{"timestamp": "2026-11-12T07:24:00.617610+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 13/20 - Loss: 0.7895"}
+{"timestamp": "2026-11-12T07:25:34.386320+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 14/20 - Loss: 0.7836"}
+{"timestamp": "2026-11-12T07:27:05.763804+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 15/20 - Loss: 0.7829"}
+{"timestamp": "2026-11-12T07:28:37.416132+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 16/20 - Loss: 0.7823"}
+{"timestamp": "2026-11-12T07:30:09.150935+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 17/20 - Loss: 0.7796"}
+{"timestamp": "2026-11-12T07:31:39.887117+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 18/20 - Loss: 0.7795"}
+{"timestamp": "2026-11-12T07:33:10.167891+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 19/20 - Loss: 0.7755"}
+{"timestamp": "2026-11-12T07:34:41.070262+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 20/20 - Loss: 0.7805"}
+{"timestamp": "2026-11-12T07:34:41.246517+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T07:35:02.184052+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T07:35:28.134170+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T07:35:28.377007+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T07:35:28.593127+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T07:35:28.808511+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T07:35:28.973116+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T07:35:29.123444+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T07:35:29.314018+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T07:35:29.510763+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T07:35:29.613598+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T07:35:29.699203+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T07:35:29.701200+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T07:35:33.649823+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T07:35:33.651821+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T07:35:35.513615+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5975"}
+{"timestamp": "2026-11-12T07:35:35.699758+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T07:35:36.465400+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T07:35:38.008066+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.5054"}
+{"timestamp": "2026-11-12T07:35:38.183753+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T07:35:38.390490+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T07:35:38.437907+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T07:35:38.614806+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T07:35:39.056843+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T07:35:39.124741+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-12T07:35:39.125774+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T07:35:40.886474+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-12T07:35:40.912583+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-12T07:35:41.098935+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T07:35:41.158650+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-12T07:35:41.332005+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-12T07:35:41.342018+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-12T07:35:41.361371+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-12T07:35:41.376202+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-12T07:35:41.399924+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-12T07:35:41.405807+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T07:51:50.663391+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:51:50.668374+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:51:50.670811+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:51:50.672829+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:53:04.304073+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:53:04.314213+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:53:04.318215+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:53:04.320214+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:54:38.740643+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:54:38.742334+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:54:38.742878+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:54:38.744002+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:55:34.170682+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:55:34.171810+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:55:34.172349+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T07:55:34.173360+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T08:00:25.862697+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T08:00:26.145317+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T08:00:26.399824+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T08:00:26.617349+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T08:00:26.809984+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T08:00:27.031449+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T08:00:27.202222+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T08:00:27.420494+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T08:00:27.567231+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T08:00:27.698239+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T08:00:27.703228+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T08:00:29.611630+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T08:00:29.614695+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T08:00:32.331799+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5900"}
+{"timestamp": "2026-11-12T08:00:32.526318+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T08:00:33.325486+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T08:00:34.808404+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.5120"}
+{"timestamp": "2026-11-12T08:00:35.038393+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T08:00:35.283281+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T08:00:35.328937+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T08:00:36.163012+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T08:00:36.592276+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T08:00:36.661316+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-12T08:00:36.662309+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T08:00:38.004683+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-12T08:00:38.021858+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-12T08:00:38.218813+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T08:00:38.272299+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-12T08:00:38.505355+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-12T08:00:38.516346+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-12T08:00:38.527457+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-12T08:00:38.538467+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-12T08:00:38.606050+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-12T08:00:38.612048+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T08:00:39.377837+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T08:00:39.379478+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T08:00:39.380593+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T08:00:39.381715+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T08:04:49.564904+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "[SYSTEM] fl_simulation_start", "fed_event": "fl_simulation_start", "fed_rounds": 15, "fed_local_epochs": 1}
+{"timestamp": "2026-11-12T08:04:51.269013+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Using compute device: cuda (NVIDIA GeForce RTX 3050 Laptop GPU)"}
+{"timestamp": "2026-11-12T08:04:52.887704+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Starting Flower Simulation for 15 rounds across 6 hospital nodes..."}
+{"timestamp": "2026-11-12T08:16:34.168779+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 01 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 0 | Energy: 4.40 Wh"}
+{"timestamp": "2026-11-12T08:27:25.067115+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 02 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 0 | Energy: 8.07 Wh"}
+{"timestamp": "2026-11-12T08:38:57.400047+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 03 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 0 | Energy: 12.59 Wh"}
+{"timestamp": "2026-11-12T08:54:06.694335+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 3 rounds)."}
+{"timestamp": "2026-11-12T08:54:06.700995+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 3 rounds)."}
+{"timestamp": "2026-11-12T08:54:06.703255+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 3 rounds)."}
+{"timestamp": "2026-11-12T08:54:33.647696+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 04 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 3 | Energy: 17.21 Wh"}
+{"timestamp": "2026-11-12T09:10:36.842790+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 05 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 3 | Energy: 20.58 Wh"}
+{"timestamp": "2026-11-12T09:24:08.508518+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 3 rounds)."}
+{"timestamp": "2026-11-12T09:24:39.268637+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 06 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 23.67 Wh"}
+{"timestamp": "2026-11-12T09:34:05.215165+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 07 | Val AUROC: 0.4731 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 27.47 Wh"}
+{"timestamp": "2026-11-12T09:42:21.730355+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 08 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 31.70 Wh"}
+{"timestamp": "2026-11-12T09:51:10.710034+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 09 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 35.56 Wh"}
+{"timestamp": "2026-11-12T09:59:10.223914+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 10 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 39.39 Wh"}
+{"timestamp": "2026-11-12T10:07:40.463164+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 11 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 42.92 Wh"}
+{"timestamp": "2026-11-12T10:14:58.462381+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 12 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 46.61 Wh"}
+{"timestamp": "2026-11-12T10:22:16.159991+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 13 | Val AUROC: 0.4731 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 50.44 Wh"}
+{"timestamp": "2026-11-12T10:29:34.344510+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 14 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 54.70 Wh"}
+{"timestamp": "2026-11-12T10:38:21.210661+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 15 | Val AUROC: 0.4732 | Ext AUROC: 0.5000 | ECE: 0.2885 | Pseudo-labels: 0 | Frozen: 4 | Energy: 58.99 Wh"}
+{"timestamp": "2026-11-12T10:38:21.401376+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Federated Simulation finished in 153.48 minutes."}
+{"timestamp": "2026-11-12T10:38:21.461542+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "[SYSTEM] fl_simulation_complete", "fed_event": "fl_simulation_complete", "fed_elapsed_seconds": 9208.511671304703, "fed_rounds": 15}
+{"timestamp": "2026-11-12T10:39:05.398942+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T10:39:05.400169+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T10:39:05.401393+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T10:39:05.401968+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T11:16:33.444364+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-12T11:17:49.241479+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 2394f728cc09 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-12T11:17:49.260001+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 14c3ff5a800c (Round 2, Prev 2394f728cc09)"}
+{"timestamp": "2026-11-12T11:17:49.309022+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 2394f728cc, computed 2729cb1581"}
+{"timestamp": "2026-11-12T11:18:59.710297+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T11:18:59.722242+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-12T11:20:14.567935+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record c5589b31b6aa (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-12T11:20:14.593952+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 42d8f1cc3d53 (Round 2, Prev c5589b31b6aa)"}
+{"timestamp": "2026-11-12T11:20:14.640012+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed c5589b31b6, computed e332993740"}
+{"timestamp": "2026-11-12T11:20:47.575667+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T11:20:47.926298+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T11:20:48.250853+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T11:20:48.448302+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T11:20:48.641535+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T11:20:48.818765+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T11:20:49.015700+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T11:20:49.237622+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T11:20:49.395725+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T11:20:49.517895+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T11:20:49.520418+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T11:20:51.991158+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T11:20:51.993149+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T11:20:55.891722+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.6073"}
+{"timestamp": "2026-11-12T11:20:56.094032+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T11:20:57.080871+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T11:20:58.810590+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.5104"}
+{"timestamp": "2026-11-12T11:20:59.012439+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T11:20:59.269366+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T11:20:59.319486+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T11:21:00.609081+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T11:21:01.223530+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T11:21:01.294356+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-12T11:21:01.296356+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T11:21:03.263546+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-12T11:21:03.288577+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-12T11:21:03.645248+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T11:21:03.698250+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-12T11:21:03.952231+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-12T11:21:03.962423+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-12T11:21:03.980425+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-12T11:21:03.997522+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-12T11:21:04.072494+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-12T11:21:04.077407+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T11:21:05.042982+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T11:21:05.045255+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T11:21:05.046899+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T11:21:05.048940+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T11:24:30.617469+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T11:24:30.638187+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-12T11:25:54.190324+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 4a7fa9fc9159 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-12T11:25:54.207950+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 603e2edbc233 (Round 2, Prev 4a7fa9fc9159)"}
+{"timestamp": "2026-11-12T11:25:54.248946+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 4a7fa9fc91, computed 288e0fab36"}
+{"timestamp": "2026-11-12T11:29:09.634915+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Ablation FL run: vanilla_fedavg (3 rounds)"}
+{"timestamp": "2026-11-12T11:41:34.118664+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 01 | Val AUROC: 0.5062 | Ext AUROC: 0.5000 | ECE: 0.3862 | Pseudo-labels: 0 | Frozen: 0 | Energy: 4.18 Wh"}
+{"timestamp": "2026-11-12T11:51:16.782971+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 02 | Val AUROC: 0.5060 | Ext AUROC: 0.5000 | ECE: 0.3862 | Pseudo-labels: 0 | Frozen: 0 | Energy: 8.50 Wh"}
+{"timestamp": "2026-11-12T11:58:42.767419+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: vanilla_fedavg (3 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T15:32:19.281890+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: dp_fedmedvision (3 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T15:32:22.822123+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T15:35:33.680637+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T15:42:02.594020+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: vanilla_fedavg (3 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T16:29:15.408325+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: dp_fedmedvision (1 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T16:29:16.105070+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T16:31:01.432050+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: dp_fedmedvision (1 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T16:31:06.348447+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T16:42:41.114041+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T17:59:53.411859+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: byzantine_defense (1 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T18:09:22.344552+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 0.9998, 'node_1': 0.9998, 'node_2': 0.9998, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-12T18:10:10.741452+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 54fe8a00b296 (Round 15, Prev 000000000000)"}
+{"timestamp": "2026-11-12T18:10:37.588905+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T18:10:37.966476+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T18:10:38.304541+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T18:10:38.442971+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:10:38.672460+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:10:38.843277+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:10:39.066245+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:10:39.277894+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:10:39.430525+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T18:10:39.540146+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T18:10:39.545142+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T18:10:41.672629+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T18:10:41.675134+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T18:10:44.583915+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5998"}
+{"timestamp": "2026-11-12T18:10:44.879616+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T18:10:45.810354+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T18:10:47.664867+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.5175"}
+{"timestamp": "2026-11-12T18:10:47.876415+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T18:10:48.132460+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T18:10:48.175205+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T18:10:48.399160+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T18:10:49.148612+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T18:10:49.268170+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-12T18:10:49.271504+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T18:10:50.666378+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-12T18:10:50.686042+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-12T18:10:50.924445+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T18:10:50.951787+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-12T18:10:51.102930+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-12T18:10:51.113938+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-12T18:10:51.130366+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-12T18:10:51.150079+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-12T18:10:51.187113+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-12T18:10:51.197101+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T18:10:52.107792+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:10:52.108955+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:10:52.109529+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:10:52.110650+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:13:44.493683+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T18:13:44.502956+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-12T18:14:57.077033+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 29be64e87f0d (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-12T18:14:57.105425+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 255c32bcca86 (Round 2, Prev 29be64e87f0d)"}
+{"timestamp": "2026-11-12T18:14:57.169064+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 29be64e87f, computed d704464a32"}
+{"timestamp": "2026-11-12T18:23:46.404831+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T18:23:46.661983+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T18:23:46.919249+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T18:23:47.132705+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:23:47.302551+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:23:47.467928+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:23:47.630704+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:23:47.779864+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:23:47.909727+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T18:23:48.019851+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T18:23:48.022853+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T18:23:49.823434+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T18:23:49.824452+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T18:23:52.446918+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5920"}
+{"timestamp": "2026-11-12T18:23:52.677817+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T18:23:53.421961+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T18:23:54.964632+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.5166"}
+{"timestamp": "2026-11-12T18:23:55.172962+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T18:23:55.424817+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T18:23:55.471505+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T18:23:55.655695+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T18:23:56.210718+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T18:23:56.254192+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-12T18:23:56.255425+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T18:23:57.355951+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-12T18:23:57.367033+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-12T18:23:57.576951+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T18:23:57.604684+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-12T18:23:57.770312+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-12T18:23:57.775321+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-12T18:23:57.789092+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-12T18:23:57.802638+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-12T18:23:57.829800+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-12T18:23:57.833958+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T18:23:58.600539+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:23:58.601627+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:23:58.602195+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:23:58.602757+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-12T18:26:53.875475+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T18:26:53.882091+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-12T18:28:02.126931+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 53d50e49d567 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-12T18:28:02.149689+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record cb379031e7c0 (Round 2, Prev 53d50e49d567)"}
+{"timestamp": "2026-11-12T18:28:02.181427+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 53d50e49d5, computed 18009f07d8"}
+{"timestamp": "2026-11-12T18:33:59.867607+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-12T18:34:00.144445+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-12T18:34:00.330996+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-12T18:34:00.457194+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:34:00.587831+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:34:00.748034+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:34:00.968719+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:34:01.172861+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-12T18:34:01.248189+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-12T18:34:01.303492+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-12T18:34:01.319374+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T18:34:04.884107+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 1}
+{"timestamp": "2026-11-12T18:34:04.884107+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-12T18:34:06.758968+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.6057"}
+{"timestamp": "2026-11-12T18:34:06.921115+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T18:34:07.602501+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-12T18:34:08.905103+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.5161"}
+{"timestamp": "2026-11-12T18:34:09.060217+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-12T18:34:09.260556+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-12T18:34:09.314954+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-12T18:34:09.451361+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-12T18:34:09.851237+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-12T18:34:09.894585+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-12T18:34:09.896519+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-12T18:34:10.725303+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-12T18:34:10.738347+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-12T18:34:10.868474+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-12T18:34:10.897840+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-12T18:34:11.041899+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-12T18:34:11.049201+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-12T18:34:11.055742+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-12T18:34:11.069004+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-12T18:34:11.090725+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-12T18:34:11.096936+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-12T18:45:14.402007+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T18:45:14.420351+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-12T18:47:44.491835+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 617a58835fc8 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-12T18:47:44.523612+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 332b2970bfd7 (Round 2, Prev 617a58835fc8)"}
+{"timestamp": "2026-11-12T18:47:44.560627+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 617a58835f, computed 507fc534e0"}
+{"timestamp": "2026-11-12T18:58:48.730620+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "[SYSTEM] fl_simulation_start", "fed_event": "fl_simulation_start", "fed_rounds": 15, "fed_local_epochs": 1}
+{"timestamp": "2026-11-12T18:58:48.757747+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Using compute device: cuda (NVIDIA GeForce RTX 3050 Laptop GPU)"}
+{"timestamp": "2026-11-12T18:58:49.086692+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Warm-starting FL global initial weights from C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T18:58:49.753946+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Starting Flower Simulation for 15 rounds across 6 hospital nodes..."}
+{"timestamp": "2026-11-12T19:00:36.006911+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "[SYSTEM] fl_simulation_start", "fed_event": "fl_simulation_start", "fed_rounds": 15, "fed_local_epochs": 1}
+{"timestamp": "2026-11-12T19:00:36.062198+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Using compute device: cuda (NVIDIA GeForce RTX 3050 Laptop GPU)"}
+{"timestamp": "2026-11-12T19:00:36.534918+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Warm-starting FL global initial weights from C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-12T19:00:37.431073+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Starting Flower Simulation for 15 rounds across 6 hospital nodes..."}
+{"timestamp": "2026-11-12T19:10:36.522458+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 01 | Val AUROC: 0.4333 | Ext AUROC: 0.5000 | ECE: 0.4347 | Pseudo-labels: 2242 | Frozen: 0 | Energy: 4.23 Wh"}
+{"timestamp": "2026-11-12T19:20:19.666720+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 02 | Val AUROC: 0.4333 | Ext AUROC: 0.5000 | ECE: 0.4347 | Pseudo-labels: 2219 | Frozen: 0 | Energy: 8.79 Wh"}
+{"timestamp": "2026-11-12T19:30:08.721585+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 03 | Val AUROC: 0.4334 | Ext AUROC: 0.5000 | ECE: 0.4347 | Pseudo-labels: 2193 | Frozen: 0 | Energy: 13.22 Wh"}
+{"timestamp": "2026-11-12T19:39:05.416693+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 04 | Val AUROC: 0.5311 | Ext AUROC: 0.5000 | ECE: 0.6246 | Pseudo-labels: 20066 | Frozen: 0 | Energy: 18.08 Wh"}
+{"timestamp": "2026-11-12T19:47:21.766331+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 05 | Val AUROC: 0.5376 | Ext AUROC: 0.5000 | ECE: 0.6326 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 22.24 Wh"}
+{"timestamp": "2026-11-12T19:55:31.275705+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 06 | Val AUROC: 0.5428 | Ext AUROC: 0.5000 | ECE: 0.6347 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 26.78 Wh"}
+{"timestamp": "2026-11-12T20:03:42.128333+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 07 | Val AUROC: 0.5422 | Ext AUROC: 0.5000 | ECE: 0.6355 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 31.59 Wh"}
+{"timestamp": "2026-11-12T20:11:35.371412+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 08 | Val AUROC: 0.5386 | Ext AUROC: 0.5000 | ECE: 0.6364 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 36.10 Wh"}
+{"timestamp": "2026-11-12T20:19:24.701720+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 09 | Val AUROC: 0.5307 | Ext AUROC: 0.5000 | ECE: 0.6369 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 40.71 Wh"}
+{"timestamp": "2026-11-12T20:27:15.276597+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 10 | Val AUROC: 0.5235 | Ext AUROC: 0.5000 | ECE: 0.6369 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 45.19 Wh"}
+{"timestamp": "2026-11-12T20:35:06.743425+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 11 | Val AUROC: 0.5189 | Ext AUROC: 0.5000 | ECE: 0.6371 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 49.39 Wh"}
+{"timestamp": "2026-11-12T20:43:11.692300+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 12 | Val AUROC: 0.5164 | Ext AUROC: 0.5000 | ECE: 0.6377 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 53.90 Wh"}
+{"timestamp": "2026-11-12T20:51:03.322783+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 13 | Val AUROC: 0.5133 | Ext AUROC: 0.5000 | ECE: 0.6377 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 58.68 Wh"}
+{"timestamp": "2026-11-12T20:58:52.088233+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 14 | Val AUROC: 0.5134 | Ext AUROC: 0.5000 | ECE: 0.6379 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 63.32 Wh"}
+{"timestamp": "2026-11-12T21:06:40.479235+00:00", "level": "INFO", "logger": "fedmedvision.fl.server", "message": "Round 15 | Val AUROC: 0.5119 | Ext AUROC: 0.5000 | ECE: 0.6381 | Pseudo-labels: 30000 | Frozen: 0 | Energy: 67.86 Wh"}
+{"timestamp": "2026-11-12T21:06:40.628037+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "Federated Simulation finished in 126.05 minutes."}
+{"timestamp": "2026-11-12T21:06:40.628644+00:00", "level": "INFO", "logger": "fedmedvision.simulation", "message": "[SYSTEM] fl_simulation_complete", "fed_event": "fl_simulation_complete", "fed_elapsed_seconds": 7563.171452283859, "fed_rounds": 15}
+{"timestamp": "2026-11-12T21:09:21.271854+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: vanilla_fedavg (3 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T21:32:17.953865+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: dp_fedmedvision (3 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-12T21:32:18.450034+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T21:46:19.571602+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T23:25:26.639829+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-12T23:41:26.952787+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-13T01:37:48.057750+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-13T02:47:07.171737+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-13T06:09:13.298213+00:00", "level": "INFO", "logger": "fedmedvision.ablations", "message": "Starting Sequential FL run: byzantine_defense (3 rounds across 6 hospital nodes)"}
+{"timestamp": "2026-11-13T07:11:31.585766+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Generating synthetic consortium datasets..."}
+{"timestamp": "2026-11-13T07:11:31.921546+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (20 samples)"}
+{"timestamp": "2026-11-13T07:11:32.141909+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_1.csv (20 samples)"}
+{"timestamp": "2026-11-13T07:11:32.310628+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (15 samples)"}
+{"timestamp": "2026-11-13T07:11:32.465683+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (15 samples)"}
+{"timestamp": "2026-11-13T07:11:32.619184+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (15 samples)"}
+{"timestamp": "2026-11-13T07:11:32.752585+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (15 samples)"}
+{"timestamp": "2026-11-13T07:11:32.902935+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved val_test.csv (15 samples)"}
+{"timestamp": "2026-11-13T07:11:32.988656+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv (10 samples)"}
+{"timestamp": "2026-11-13T07:11:33.064891+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved bbox_eval.csv (8 samples)"}
+{"timestamp": "2026-11-13T07:11:33.066897+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-13T07:11:35.422859+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[SYSTEM] baselines_training_start", "fed_event": "baselines_training_start", "fed_mode": "synthetic", "fed_device": "NVIDIA GeForce RTX 3050 Laptop GPU", "fed_epochs": 1}
+{"timestamp": "2026-11-13T07:11:35.423859+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: isolated_hub_0 ==="}
+{"timestamp": "2026-11-13T07:11:38.493053+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[isolated_hub_0] Epoch 01/01 - Loss: 1.5971"}
+{"timestamp": "2026-11-13T07:11:39.034071+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\isolated_hub_0.pt"}
+{"timestamp": "2026-11-13T07:11:40.087701+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "=== Starting Training: centralized_oracle ==="}
+{"timestamp": "2026-11-13T07:11:41.523692+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "[centralized_oracle] Epoch 01/01 - Loss: 1.5104"}
+{"timestamp": "2026-11-13T07:11:41.720801+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "Saved checkpoint to C:\\Users\\ddnan\\federatedL\\results\\checkpoints\\centralized_oracle.pt"}
+{"timestamp": "2026-11-13T07:11:41.970667+00:00", "level": "INFO", "logger": "fedmedvision.baselines", "message": "\u2705 Phase 1 baselines complete. Summary written to C:\\Users\\ddnan\\federatedL\\results\\metrics\\phase1_baselines.json"}
+{"timestamp": "2026-11-13T07:11:42.015160+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical NIH ChestX-ray14 Archive ==="}
+{"timestamp": "2026-11-13T07:11:43.150446+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Matched 10000 real NIH images on disk in C:\\Users\\ddnan\\federatedL\\data\\processed\\nih_cxr14\\images"}
+{"timestamp": "2026-11-13T07:11:43.624702+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real labeled NIH CXR entries."}
+{"timestamp": "2026-11-13T07:11:43.670512+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real BBox evaluation split to C:\\Users\\ddnan\\federatedL\\data\\splits\\bbox_eval.csv (87 entries)."}
+{"timestamp": "2026-11-13T07:11:43.672546+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "=== Processing Real Clinical CheXpert Archive ==="}
+{"timestamp": "2026-11-13T07:11:45.134204+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Loaded 10000 real CheXpert records from images on disk."}
+{"timestamp": "2026-11-13T07:11:45.148432+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved real Consortium Validation/Test split to C:\\Users\\ddnan\\federatedL\\data\\splits\\val_test.csv (1500 entries)."}
+{"timestamp": "2026-11-13T07:11:45.291275+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved hub_0.csv (1313) and hub_1.csv (7187) with Dirichlet alpha=0.3."}
+{"timestamp": "2026-11-13T07:11:45.317417+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved centralized_pooled_train.csv (8500 entries)."}
+{"timestamp": "2026-11-13T07:11:45.446961+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_2.csv (4452 samples)."}
+{"timestamp": "2026-11-13T07:11:45.451354+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_3.csv (807 samples)."}
+{"timestamp": "2026-11-13T07:11:45.462168+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_4.csv (2123 samples)."}
+{"timestamp": "2026-11-13T07:11:45.472141+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved clinic_5.csv (2618 samples)."}
+{"timestamp": "2026-11-13T07:11:45.492885+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved external_test.csv to C:\\Users\\ddnan\\federatedL\\data\\splits\\external_test.csv (1500 samples)."}
+{"timestamp": "2026-11-13T07:11:45.499167+00:00", "level": "INFO", "logger": "fedmedvision.data", "message": "Saved consortium distribution stats to C:\\Users\\ddnan\\federatedL\\data\\splits\\consortium_stats.json"}
+{"timestamp": "2026-11-13T07:15:12.112392+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-13T07:15:12.135587+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-13T07:16:20.966595+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 9ec8b6d8e127 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-13T07:16:20.985553+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record bdefb100a2d4 (Round 2, Prev 9ec8b6d8e127)"}
+{"timestamp": "2026-11-13T07:16:21.016603+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 9ec8b6d8e1, computed 5389999c43"}
+{"timestamp": "2026-11-13T07:17:08.469304+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.0 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-13T07:17:08.470358+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.1 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-13T07:17:08.471897+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.2 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-13T07:17:08.473628+00:00", "level": "INFO", "logger": "fedmedvision.green", "message": "Green AI: Freezing stages.3 (Stable for 2 rounds)."}
+{"timestamp": "2026-11-13T08:30:04.729616+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-13T08:30:04.752379+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-13T08:32:56.326905+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 24075f67c402 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-13T08:32:56.333727+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 58cf93f6f9d2 (Round 2, Prev 24075f67c402)"}
+{"timestamp": "2026-11-13T08:32:56.355701+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 24075f67c4, computed 1c0ecfd2e9"}
+{"timestamp": "2026-11-13T08:56:44.499652+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 817073b37b08 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-13T08:56:44.694075+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 1c207f2541f6 (Round 2, Prev 817073b37b08)"}
+{"timestamp": "2026-11-13T08:56:44.887297+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 6eca25dbd0a0 (Round 3, Prev 1c207f2541f6)"}
+{"timestamp": "2026-11-13T08:56:45.065275+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 19e62758c069 (Round 4, Prev 6eca25dbd0a0)"}
+{"timestamp": "2026-11-13T08:56:45.245680+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 3234ae015ac6 (Round 5, Prev 19e62758c069)"}
+{"timestamp": "2026-11-13T08:56:45.431452+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record e14860fa7498 (Round 6, Prev 3234ae015ac6)"}
+{"timestamp": "2026-11-13T08:56:45.648914+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 7619baa11e83 (Round 7, Prev e14860fa7498)"}
+{"timestamp": "2026-11-13T08:56:45.845717+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 449bb34e3f61 (Round 8, Prev 7619baa11e83)"}
+{"timestamp": "2026-11-13T08:56:46.015883+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record c3a1fca72104 (Round 9, Prev 449bb34e3f61)"}
+{"timestamp": "2026-11-13T08:56:46.236763+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 153adefde6ef (Round 10, Prev c3a1fca72104)"}
+{"timestamp": "2026-11-13T08:56:46.431423+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 4fea4b6bb912 (Round 11, Prev 153adefde6ef)"}
+{"timestamp": "2026-11-13T08:56:46.626968+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 578ac550a3af (Round 12, Prev 4fea4b6bb912)"}
+{"timestamp": "2026-11-13T08:56:46.899585+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record e23cc7eb39ec (Round 13, Prev 578ac550a3af)"}
+{"timestamp": "2026-11-13T08:56:47.189749+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record f5dd7e15502a (Round 14, Prev e23cc7eb39ec)"}
+{"timestamp": "2026-11-13T08:56:47.519482+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 05f25bd4c54d (Round 15, Prev f5dd7e15502a)"}
+{"timestamp": "2026-11-13T08:56:47.752929+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 8e303a24ca67 (Round 16, Prev 05f25bd4c54d)"}
+{"timestamp": "2026-11-13T08:57:29.920397+00:00", "level": "INFO", "logger": "fedmedvision.security.dp", "message": "Opacus DP-SGD enabled: noise_multiplier=0.85, max_grad_norm=1.0, target_delta=1e-05"}
+{"timestamp": "2026-11-13T08:57:29.946134+00:00", "level": "WARNING", "logger": "fedmedvision.security.byzantine", "message": "Byzantine Defense: Flagged anomaly in node(s) ['node_5'] with cosine scores {'node_0': 1.0, 'node_1': 1.0, 'node_2': 1.0, 'node_3': 1.0, 'node_4': 1.0, 'node_5': -1.0}. Safely rejected via Trimmed Mean."}
+{"timestamp": "2026-11-13T08:58:49.949133+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 13429fed7fce (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-13T08:58:49.962903+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 2ffcbf3f99ec (Round 2, Prev 13429fed7fce)"}
+{"timestamp": "2026-11-13T08:58:49.992310+00:00", "level": "ERROR", "logger": "fedmedvision.security.audit", "message": "Audit Record Altered at line 1: claimed 13429fed7f, computed ade911b320"}
+{"timestamp": "2026-11-13T08:59:07.812876+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 5340f2cdbf89 (Round 1, Prev 8e303a24ca67)"}
+{"timestamp": "2026-11-13T08:59:07.987263+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record b133b6d21fec (Round 2, Prev 5340f2cdbf89)"}
+{"timestamp": "2026-11-13T08:59:08.204746+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record b12a239d5beb (Round 3, Prev b133b6d21fec)"}
+{"timestamp": "2026-11-13T08:59:08.381285+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 802db16902e8 (Round 4, Prev b12a239d5beb)"}
+{"timestamp": "2026-11-13T08:59:08.674775+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 6e8468f62d62 (Round 5, Prev 802db16902e8)"}
+{"timestamp": "2026-11-13T08:59:08.858027+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 316e91e99e43 (Round 6, Prev 6e8468f62d62)"}
+{"timestamp": "2026-11-13T08:59:09.205131+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 4f8175ed10f0 (Round 7, Prev 316e91e99e43)"}
+{"timestamp": "2026-11-13T08:59:09.417456+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 9ad9b4e51f03 (Round 8, Prev 4f8175ed10f0)"}
+{"timestamp": "2026-11-13T08:59:09.605701+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 6ecb02b0ea0c (Round 9, Prev 9ad9b4e51f03)"}
+{"timestamp": "2026-11-13T08:59:09.792528+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 664eb52f508f (Round 10, Prev 6ecb02b0ea0c)"}
+{"timestamp": "2026-11-13T08:59:09.973113+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 8ca3cc5e8f33 (Round 11, Prev 664eb52f508f)"}
+{"timestamp": "2026-11-13T08:59:10.159432+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 76c6ef66a699 (Round 12, Prev 8ca3cc5e8f33)"}
+{"timestamp": "2026-11-13T08:59:10.327920+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record b81239ef4f52 (Round 13, Prev 76c6ef66a699)"}
+{"timestamp": "2026-11-13T08:59:10.508495+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 0529ae021fbf (Round 14, Prev b81239ef4f52)"}
+{"timestamp": "2026-11-13T08:59:10.688042+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 04c91a6d9503 (Round 15, Prev 0529ae021fbf)"}
+{"timestamp": "2026-11-13T08:59:10.903674+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record bbb13ac8acb1 (Round 16, Prev 04c91a6d9503)"}
+{"timestamp": "2026-11-13T08:59:21.809123+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 6ff8f469b792 (Round 1, Prev 000000000000)"}
+{"timestamp": "2026-11-13T08:59:21.980205+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 17faec6b0891 (Round 2, Prev 6ff8f469b792)"}
+{"timestamp": "2026-11-13T08:59:22.151962+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record ab0db99adabf (Round 3, Prev 17faec6b0891)"}
+{"timestamp": "2026-11-13T08:59:22.314277+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 05cde8a84fdf (Round 4, Prev ab0db99adabf)"}
+{"timestamp": "2026-11-13T08:59:22.491459+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 1a0919851034 (Round 5, Prev 05cde8a84fdf)"}
+{"timestamp": "2026-11-13T08:59:22.668947+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 53d87e5eb26b (Round 6, Prev 1a0919851034)"}
+{"timestamp": "2026-11-13T08:59:22.844619+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 149eb6ab3b83 (Round 7, Prev 53d87e5eb26b)"}
+{"timestamp": "2026-11-13T08:59:23.029696+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 66aa11f85dea (Round 8, Prev 149eb6ab3b83)"}
+{"timestamp": "2026-11-13T08:59:23.206518+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 5b67c80a5ba6 (Round 9, Prev 66aa11f85dea)"}
+{"timestamp": "2026-11-13T08:59:23.382607+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 8eca0be11d34 (Round 10, Prev 5b67c80a5ba6)"}
+{"timestamp": "2026-11-13T08:59:23.554836+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 3226293d1d50 (Round 11, Prev 8eca0be11d34)"}
+{"timestamp": "2026-11-13T08:59:23.724233+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 09dfb423d6bd (Round 12, Prev 3226293d1d50)"}
+{"timestamp": "2026-11-13T08:59:23.893955+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 44e07158648e (Round 13, Prev 09dfb423d6bd)"}
+{"timestamp": "2026-11-13T08:59:24.072605+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 904acfd40964 (Round 14, Prev 44e07158648e)"}
+{"timestamp": "2026-11-13T08:59:24.245444+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record 0a0b4797ff1c (Round 15, Prev 904acfd40964)"}
+{"timestamp": "2026-11-13T08:59:24.427586+00:00", "level": "INFO", "logger": "fedmedvision.security.audit", "message": "Audit Ledger: Appended record a27d9cf5a101 (Round 16, Prev 0a0b4797ff1c)"}

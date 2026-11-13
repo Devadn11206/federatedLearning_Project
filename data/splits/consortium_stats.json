@@ -1,0 +1,84 @@
+{
+  "mode": "real",
+  "pathologies": [
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Pneumonia",
+    "No Finding"
+  ],
+  "nodes": {
+    "node_0": {
+      "name": "Metropolitan General Hospital",
+      "role": "labeled_hub",
+      "sample_count": 1313,
+      "class_distribution": {
+        "Cardiomegaly": 222,
+        "Effusion": 91,
+        "Infiltration": 378,
+        "Pneumonia": 38,
+        "No Finding": 549
+      }
+    },
+    "node_1": {
+      "name": "University Medical Center",
+      "role": "labeled_hub",
+      "sample_count": 7187,
+      "class_distribution": {
+        "Cardiomegaly": 47,
+        "Effusion": 698,
+        "Infiltration": 979,
+        "Pneumonia": 99,
+        "No Finding": 4274
+      }
+    },
+    "node_2": {
+      "name": "Riverside Regional Clinic",
+      "role": "unlabeled_clinic",
+      "sample_count": 4452,
+      "class_distribution": {
+        "Cardiomegaly": 182,
+        "Effusion": 2512,
+        "Infiltration": 1517,
+        "Pneumonia": 111,
+        "No Finding": 585
+      }
+    },
+    "node_3": {
+      "name": "Northside Community Hospital",
+      "role": "unlabeled_clinic",
+      "sample_count": 807,
+      "class_distribution": {
+        "Cardiomegaly": 133,
+        "Effusion": 716,
+        "Infiltration": 446,
+        "Pneumonia": 23,
+        "No Finding": 0
+      }
+    },
+    "node_4": {
+      "name": "Valley Rural Health Center",
+      "role": "unlabeled_clinic",
+      "sample_count": 2123,
+      "class_distribution": {
+        "Cardiomegaly": 11,
+        "Effusion": 20,
+        "Infiltration": 1065,
+        "Pneumonia": 75,
+        "No Finding": 328
+      }
+    },
+    "node_5": {
+      "name": "Highland Rural Clinic (Byzantine)",
+      "role": "unlabeled_clinic",
+      "sample_count": 2618,
+      "class_distribution": {
+        "Cardiomegaly": 977,
+        "Effusion": 364,
+        "Infiltration": 1404,
+        "Pneumonia": 81,
+        "No Finding": 230
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# FedMedVision — Security & Green AI Configuration
+
+# Differential Privacy (Opacus DP-SGD)
+differential_privacy:
+  enabled: true
+  epsilon_sweep: [1.0, 3.0, 8.0]  # inf handled separately (no-DP baseline)
+  delta: 1.0e-5
+  max_grad_norm: 1.0
+  accountant: "rdp"  # Rényi DP accountant
+
+# Secure Aggregation
+secure_aggregation:
+  enabled: true
+  method: "secagg_plus"  # Flower SecAgg+
+
+# Byzantine Defense
+byzantine_defense:
+  aggregation: "trimmed_mean"
+  trim_ratio: 0.15        # fraction of clients trimmed per side
+  poison_target_node: 5   # node_5 is the Byzantine poisoning node
+  defense_active: true
+
+# Green AI — Adaptive Layer Freezing
+green_ai:
+  adaptive_freezing: true
+  warmup_rounds: 6          # wait until cross-hospital representations stabilize
+  grad_norm_patience: 6     # rounds to wait before freezing a stage
+  grad_norm_tol: 1.0e-3     # gradient norm threshold below which stage is frozen
+  co2_kg_per_kwh: 0.42      # EU average carbon intensity (kg CO2 / kWh)
+  energy_tracking: true
+  pynvml_polling_interval_s: 10
+
+# Temperature Scaling (post-hoc calibration)
+calibration:
+  temperature_scaling: true
+  ece_bins: 15

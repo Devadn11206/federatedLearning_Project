@@ -1,0 +1,45 @@
+# FedMedVision — Federated Training Configuration
+
+# Model
+backbone: "convnext_tiny"
+pretrained: true
+dropout_p: 0.2
+fedbn_local_norm: true  # FedBN: exclude norm layers from aggregation
+
+# FL rounds
+num_rounds: 25
+local_epochs: 2
+batch_size: 16
+lr: 3.0e-4
+weight_decay: 1.0e-4
+use_amp: true  # FP16 mixed precision (torch.cuda.amp.autocast)
+
+# VRAM constraints (enforced by AGENT.md)
+max_batch_size: 32
+max_num_workers: 2
+
+# FedProx regularization
+fedprox_mu: 0.01
+
+# FedProto prototype alignment
+fedproto_lambda: 0.1
+
+# Semi-supervised pseudo-labeling (for unlabeled nodes 2–5)
+semi_supervised:
+  mc_dropout_passes: 5
+  conf_threshold: 0.85   # minimum max-probability for pseudo-label acceptance
+  entropy_threshold: 0.35  # maximum predictive entropy for acceptance
+  unsup_lambda: 0.5      # weight of unsupervised loss term
+
+# Loss function
+loss: "BCEWithLogitsLoss"
+num_classes: 5
+
+# Optimizer
+optimizer: "AdamW"
+scheduler: "CosineAnnealingLR"
+scheduler_T_max: 25
+
+# Evaluation
+eval_every_rounds: 5
+save_best_metric: "macro_auc"

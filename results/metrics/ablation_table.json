@@ -1,0 +1,68 @@
+[
+  {
+    "configuration": "1. Isolated Local (Hub 0)",
+    "val_auroc": 0.4333,
+    "ext_auroc": 0.5,
+    "ece": 0.4346,
+    "bbox_iou": 0.1272,
+    "pointing_accuracy": 0.1264,
+    "privacy_epsilon": "N/A (Local)",
+    "byzantine_rejected": "N/A",
+    "energy_wh": 14.2
+  },
+  {
+    "configuration": "2. Centralized Oracle (Upper Bound)",
+    "val_auroc": 0.424,
+    "ext_auroc": 0.5,
+    "ece": 0.4296,
+    "bbox_iou": 0.143,
+    "pointing_accuracy": 0.1954,
+    "privacy_epsilon": "Infinity (None)",
+    "byzantine_rejected": "N/A",
+    "energy_wh": 48.6
+  },
+  {
+    "configuration": "3. Vanilla FedAvg",
+    "val_auroc": 0.5671,
+    "ext_auroc": 0.5,
+    "ece": 0.1609,
+    "bbox_iou": 0.0272,
+    "pointing_accuracy": 0.046,
+    "privacy_epsilon": "Infinity (None)",
+    "byzantine_rejected": "No Defense",
+    "energy_wh": 38.45
+  },
+  {
+    "configuration": "4. FedMedVision (Full Method - 15 Rounds)",
+    "val_auroc": 0.5428,
+    "ext_auroc": 0.5,
+    "ece": 0.6347,
+    "bbox_iou": 0.07,
+    "pointing_accuracy": 0.092,
+    "privacy_epsilon": "SecAgg+ / Inf",
+    "byzantine_rejected": "Inactive",
+    "energy_wh": 58.99
+  },
+  {
+    "configuration": "5. DP-FedMedVision (Opacus DP-SGD)",
+    "val_auroc": 0.4884,
+    "ext_auroc": 0.5,
+    "ece": 0.0937,
+    "bbox_iou": 0.0171,
+    "pointing_accuracy": 0.0345,
+    "privacy_epsilon": "eps=7.82, delta=1e-5",
+    "byzantine_rejected": "Inactive",
+    "energy_wh": 29.8
+  },
+  {
+    "configuration": "6. FedMedVision Under Attack (Trimmed Mean)",
+    "val_auroc": 0.5633,
+    "ext_auroc": 0.5,
+    "ece": 0.171,
+    "bbox_iou": 0.0592,
+    "pointing_accuracy": 0.1034,
+    "privacy_epsilon": "SecAgg+",
+    "byzantine_rejected": "Yes (Node 5 Flagged cos=-1.0 & Trimmed)",
+    "energy_wh": 36.15
+  }
+]

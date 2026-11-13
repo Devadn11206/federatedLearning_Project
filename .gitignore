@@ -1,0 +1,48 @@
+# Data (never commit raw/processed medical images)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Exclude zip archives and dataset tarballs
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Results checkpoints (model weights > 100MB exceed GitHub limit)
+results/checkpoints/*
+!results/checkpoints/.gitkeep
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Experiment artifacts
+wandb/
+*.egg-info/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.env
+.env
+secrets.yaml

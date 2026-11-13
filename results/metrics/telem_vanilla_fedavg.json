@@ -1,0 +1,26 @@
+[
+  {
+    "round": 1,
+    "val_macro_auroc": 0.5062,
+    "ext_macro_auroc": 0.5,
+    "val_ece": 0.3862,
+    "pseudo_labels_accepted": 0,
+    "frozen_stages": [],
+    "round_energy_wh": 4.1798,
+    "cumulative_energy_wh": 4.1798,
+    "cumulative_co2_grams": 1.7554,
+    "uplink_payload_mb": 424.33
+  },
+  {
+    "round": 2,
+    "val_macro_auroc": 0.506,
+    "ext_macro_auroc": 0.5,
+    "val_ece": 0.3862,
+    "pseudo_labels_accepted": 0,
+    "frozen_stages": [],
+    "round_energy_wh": 4.3237,
+    "cumulative_energy_wh": 8.5035,
+    "cumulative_co2_grams": 3.5714,
+    "uplink_payload_mb": 424.33
+  }
+]

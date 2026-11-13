@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "fedmedvision"
+version = "0.1.0"
+description = "Energy-Efficient, Privacy-Preserving, and Explainable Semi-Supervised Federated Learning for Multi-Hospital Chest X-Ray Triage"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "FedMedVision Team" }
+]
+keywords = [
+  "federated-learning",
+  "medical-imaging",
+  "chest-xray",
+  "differential-privacy",
+  "explainable-ai",
+  "green-ai",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch",
+  "torchvision",
+  "timm>=1.0.9",
+  "flwr[simulation]>=1.43.0",
+  "opacus>=1.6.0",
+  "grad-cam>=1.5.4",
+  "albumentations>=1.4.18",
+  "nvidia-ml-py",
+  "scikit-learn>=1.5.0",
+  "pandas>=2.2.0",
+  "numpy>=1.26.0",
+  "pyyaml>=6.0.1",
+  "matplotlib>=3.9.0",
+  "seaborn>=0.13.2",
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "python-multipart",
+  "reportlab>=4.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "pytest-cov",
+  "ruff>=0.5.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["models*", "security*", "fl_engine*", "app*", "utils*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+exclude = [
+  ".venv", "venv", "__pycache__",
+  ".git", "dist", "build",
+  "*.egg-info",
+]
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # flake8-bugbear
+  "C4",  # flake8-comprehensions
+  "UP",  # pyupgrade
+]
+ignore = [
+  "B008",  # do not perform function calls in argument defaults (FastAPI patterns)
+  "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["models", "security", "fl_engine", "app", "utils"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+filterwarnings = [
+  "ignore::DeprecationWarning",
+  "ignore::UserWarning",
+]
